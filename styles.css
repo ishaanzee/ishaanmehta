@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+html { background: #080808; color-scheme: dark; }
+body { margin: 0; background: #080808; color: #dadada; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.55; }
+a { color: #578cff; }
+a:hover { color: #8bb0ff; }
+.page { width: min(680px, calc(100% - 32px)); margin: 55px auto 80px; }
+header { margin-bottom: 48px; padding-bottom: 20px; border-bottom: 1px solid #333; }
+h1 { margin: 0; color: white; font-family: Georgia, "Times New Roman", serif; font-size: 36px; font-weight: normal; }
+header p { margin: 2px 0 13px; color: #888; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 17px; }
+section { margin: 0 0 58px; }
+h2 { margin: 0 0 22px; color: #6595ff; font-family: "Courier New", monospace; font-size: 17px; font-weight: normal; text-transform: lowercase; }
+h3 { margin: 0 0 4px; color: #f1f1f1; font-size: 17px; }
+p { margin-top: 0; }
+.project { display: grid; grid-template-columns: 1fr 220px; gap: 24px; align-items: start; margin-bottom: 42px; }
+.project-link { display: block; color: inherit; text-decoration: none; }
+.project-link .project, .project-link .text-project { padding: 12px; border: 1px solid transparent; }
+.project-link .project { margin-left: -12px; margin-right: -12px; }
+.project-link:hover { color: inherit; }
+.project-link:hover .project, .project-link:hover .text-project { border-color: #315994; background: #0b0e14; }
+.project-link:hover h3 { color: #77a1ff; text-decoration: underline; }
+.project-text p { margin: 6px 0 9px; }
+small { color: #777; font-family: "Courier New", monospace; }
+.media-placeholder { position: relative; display: grid; place-items: center; width: 220px; height: 145px; overflow: hidden; border: 1px dashed #3d5480; background: #0b101a; color: #65718b; }
+.media-placeholder p { position: absolute; bottom: 7px; margin: 0; font-family: "Courier New", monospace; font-size: 10px; }
+.placeholder-mark { width: 45px; height: 63px; border: 1px solid #416ab8; border-radius: 25px 25px 7px 7px; transform: rotate(7deg); }
+.court { width: 64px; height: 64px; border: 1px solid #416ab8; border-radius: 50%; }
+.project-media { width: 100%; height: 100%; object-fit: cover; display: block; }
+.text-project { margin: 0 0 27px; padding-left: 15px; border-left: 2px solid #244684; }
+.text-project p { margin: 5px 0; }
+.job { margin-bottom: 24px; }
+.job p { margin: 3px 0; }
+.job p:last-child { color: #aaa; }
+.education p { margin: 3px 0; }
+.education p:last-child { color: #888; font-family: "Courier New", monospace; font-size: 13px; }
+footer { margin-top: 75px; padding-top: 15px; border-top: 1px solid #282828; color: #666; font-family: "Courier New", monospace; font-size: 12px; }
+.project-page { width: min(760px, calc(100% - 32px)); margin: 50px auto 90px; }
+.project-page .back { display: inline-block; margin-bottom: 34px; font-family: "Courier New", monospace; }
+.project-page h1 { margin-bottom: 12px; }
+.project-summary { max-width: 590px; color: #aaa; font-size: 17px; }
+.gallery { margin: 45px 0 28px; }
+.gallery figure { margin: 0 0 38px; }
+.gallery img, .gallery video { display: block; width: 100%; max-height: 700px; object-fit: contain; background: #050505; border: 1px solid #333; }
+.youtube { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #050505; border: 1px solid #333; }
+.youtube iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.gallery figcaption { margin-top: 7px; color: #888; font-size: 13px; }
+.empty-gallery { display: grid; place-items: center; min-height: 330px; padding: 25px; border: 1px dashed #3d5480; background: #0b101a; color: #777; text-align: center; }
+.empty-gallery p { margin: 0 0 4px; }
+.project-notes { max-width: 620px; margin-top: 25px; }
+@media (max-width: 590px) { .page { margin-top: 30px; } .project { grid-template-columns: 1fr; gap: 14px; } .media-placeholder { width: 100%; height: 190px; } }
