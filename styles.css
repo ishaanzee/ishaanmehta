@@ -47,4 +47,17 @@ footer { margin-top: 75px; padding-top: 15px; border-top: 1px solid #282828; col
 .empty-gallery { display: grid; place-items: center; min-height: 330px; padding: 25px; border: 1px dashed #3d5480; background: #0b101a; color: #777; text-align: center; }
 .empty-gallery p { margin: 0 0 4px; }
 .project-notes { max-width: 620px; margin-top: 25px; }
+.comparison-figure { margin: 38px 0 45px; }
+.video-wipe-frame { position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: #050505; border: 1px solid #333; }
+.video-wipe-frame > video, .video-wipe-after video { display: block; width: 100%; height: 100%; max-height: none; object-fit: contain; border: 0; }
+.video-wipe-after { position: absolute; inset: 0 auto 0 0; overflow: hidden; }
+.video-wipe-after video { width: 100%; max-width: none; }
+.video-wipe-label { position: absolute; top: 9px; padding: 3px 6px; background: rgba(0,0,0,.82); font: 11px "Courier New", monospace; }
+.video-wipe-vision-label { left: 9px; color: #94b8ff; border: 1px solid #578cff; }
+.video-wipe-original-label { right: 9px; color: #eee; border: 1px solid #aaa; }
+.video-wipe-divider { position: absolute; top: 0; bottom: 0; z-index: 2; width: 2px; background: #78a2ff; box-shadow: 0 0 5px #000; pointer-events: none; }
+.video-wipe-divider span { position: absolute; top: 50%; left: 50%; display: grid; place-items: center; width: 30px; height: 30px; transform: translate(-50%, -50%); border: 1px solid #78a2ff; border-radius: 50%; background: #080808; color: #b5ccff; font: 18px Arial, sans-serif; }
+.video-wipe-play { position: absolute; left: 50%; bottom: 10px; z-index: 3; transform: translateX(-50%); padding: 3px 8px; border: 1px solid #777; background: rgba(0,0,0,.75); color: #eee; font: 11px "Courier New", monospace; cursor: pointer; }
+.video-wipe-slider { display: block; width: 100%; margin-top: 10px; accent-color: #578cff; }
+.video-wipe-key { display: flex; justify-content: space-between; color: #888; font: 11px "Courier New", monospace; }
 @media (max-width: 590px) { .page { margin-top: 30px; } .project { grid-template-columns: 1fr; gap: 14px; } .media-placeholder { width: 100%; height: 190px; } }

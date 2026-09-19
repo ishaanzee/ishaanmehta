@@ -2,18 +2,17 @@ export const projects = {
   basketball: {
     slug: "basketball",
     title: "basketball shot analyzer",
-    summary: "A computer vision project that looks at shooting form, gives feedback, and rates shots in a 1-on-1.",
-    notes: "intended to run on apple silicon with 16gb ram minimum (24 recommended).",
+    summary: "A computer vision project that looks at shooting form, gives feedback, and rates shots in a real 1-on-1 or 5 on 5 game.",
+    notes: "intended to run on apple silicon with 16gb ram (only tested on 36gb).",
     github: "https://github.com/ishaanzee/formball",
     cover: "/projects/basketball/formballcover.png",
     media: [
       {
-        youtube: "6gkVcpQtEcA",
-        caption: "Ex1: before comp vision"
-      },
-      {
-        youtube: "uuiYnWBlgpQ",
-        caption: "Ex1: processed video"
+        comparison: {
+          before: "/projects/basketball/before.mp4",
+          after: "/projects/basketball/vision.mp4",
+        },
+        caption: "Ex1: drag the slider to compare the original and computer vision video",
       },
       {
         src: "/projects/basketball/Screenshot 2026-09-18 at 8.20.05 PM.png",
@@ -24,12 +23,11 @@ export const projects = {
         caption: "advanced metrics"
       },
       {
-        youtube: "2D-dZsQ6Rtc",
-        caption: "Ex2: before comp vision"
-      },
-      {
-        youtube: "ZF1sE-wZctk",
-        caption: "Ex2: processed video"
+        comparison: {
+          before: "/projects/basketball/before-2.mp4",
+          after: "/projects/basketball/vision-2.mp4",
+        },
+        caption: "Ex2: drag the slider to compare the original and computer vision video",
       },
       {
         src: "/projects/basketball/simplemetrics.png",
