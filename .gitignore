@@ -18,3 +18,4 @@ CLAUDE.md
 resumeMLSWupdate9-18-26.pdf
 *.pdf
 !public/resume.pdf
+scripts/build_portfolio.py
