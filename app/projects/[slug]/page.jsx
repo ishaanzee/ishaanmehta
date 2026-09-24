@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { projects, getProject } from "../../../data/projects";
 import VideoWipe from "../../../components/VideoWipe";
+import PerformanceChart from "../../../components/PerformanceChart";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -26,6 +27,8 @@ export default async function ProjectPage({ params }) {
       <p className="project-summary">{project.summary}</p>
 
       {project.github && <p><a href={project.github} target="_blank" rel="noreferrer">github repo ↗</a></p>}
+
+      {slug === "basketball" && <PerformanceChart />}
 
       <div className="gallery">
         {project.media.length ? project.media.map((item, index) => {
