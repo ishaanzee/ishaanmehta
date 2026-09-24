@@ -28,9 +28,9 @@ export default function Home() {
 
       <section>
         <h2>things i&apos;ve made</h2>
-        <a className="project-link" href="/projects/basketball"><article className="project">
-          <div className="project-text"><h3>basketball shot analyzer</h3><p>Looks at your shooting form and gives feedback. It can also rate shots in any game from 1v1 to 5v5 by analyzing separation</p><small>python / pose estimation / ml</small></div>
-          <ProjectMedia project="basketball" variant="basketball" />
+        <a className="project-link" href="/projects/ballform"><article className="project">
+          <div className="project-text"><h3>ballform</h3><p>Looks at your shooting form and gives feedback. It can also rate shots in any game from 1v1 to 5v5 by analyzing separation.</p><small>python / pose estimation / ml</small></div>
+          <ProjectMedia project="ballform" variant="ballform" />
         </article></a>
         <a className="project-link" href="/projects/lamp"><article className="project">
           <div className="project-text"><h3>lamp robot simulation</h3><p>A 5-DOF character lamp that uses a person&apos;s arm movement to control the simulated joints.</p><small>python / computer vision / simulation</small></div>

@@ -1,41 +1,41 @@
 export const projects = {
-  basketball: {
-    slug: "basketball",
-    title: "basketball shot analyzer",
+  ballform: {
+    slug: "ballform",
+    title: "ballform",
     summary: "A computer vision project that looks at shooting form, gives feedback, and rates shots in a real 1-on-1 or 5 on 5 game.",
     notes: "intended to run on apple silicon with 16gb ram (only tested on 36gb).",
     github: "https://github.com/ishaanzee/formball",
-    cover: "/projects/basketball/formballcover.png",
+    cover: "/projects/ballform/cover.png",
     media: [
       {
         comparison: {
-          before: "/projects/basketball/before.mp4",
-          after: "/projects/basketball/vision.mp4",
+          before: "/projects/ballform/before.mp4",
+          after: "/projects/ballform/vision.mp4",
         },
-        caption: "Ex1: drag the slider to compare the original and computer vision video",
+        caption: "first clip: drag the slider to see what ballform tracks.",
       },
       {
-        src: "/projects/basketball/Screenshot 2026-09-18 at 8.20.05 PM.png",
-        caption: "simple summary"
+        src: "/projects/ballform/Screenshot 2026-09-18 at 8.20.05 PM.png",
+        caption: "ballform found one release and marked it as made or likely made."
       },
       {
-        src: "/projects/basketball/Screenshot 2026-09-18 at 8.20.15 PM.png",
-        caption: "advanced metrics"
+        src: "/projects/ballform/Screenshot 2026-09-18 at 8.20.15 PM.png",
+        caption: "the shot scored 88/100 for space. below it are the defender spacing and hand clearance measurements."
       },
       {
         comparison: {
-          before: "/projects/basketball/before-2.mp4",
-          after: "/projects/basketball/vision-2.mp4",
+          before: "/projects/ballform/before-2.mp4",
+          after: "/projects/ballform/vision-2.mp4",
         },
-        caption: "Ex2: drag the slider to compare the original and computer vision video",
+        caption: "second clip: drag the slider to compare the original footage with ballform's tracking.",
       },
       {
-        src: "/projects/basketball/simplemetrics.png",
-        caption: "simple summary"
+        src: "/projects/ballform/simplemetrics.png",
+        caption: "one release found in the second clip, also marked as made or likely made."
       },
       {
-        src: "/projects/basketball/advancedmetrics.png",
-        caption: "advanced metrics"
+        src: "/projects/ballform/advancedmetrics.png",
+        caption: "this shot scored 66.9/100 for space. ballform couldn't measure the change in separation before release."
       }
 
     ],
