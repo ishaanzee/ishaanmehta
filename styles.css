@@ -71,13 +71,18 @@ footer { margin-top: 75px; padding-top: 15px; border-top: 1px solid #282828; col
 .performance-chart figcaption { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 15px; color: #eee; font-size: 14px; }
 .performance-chart figcaption span { color: #8993a5; font: 11px "Courier New", monospace; text-align: right; }
 .performance-bars { display: grid; gap: 11px; }
-.performance-row { display: grid; grid-template-columns: 150px minmax(0, 1fr) 62px; gap: 12px; align-items: center; }
+.performance-row { display: grid; grid-template-columns: 210px minmax(0, 1fr) 62px; gap: 12px; align-items: center; }
 .performance-label { color: #b8c0cf; font-size: 13px; }
 .performance-track { height: 18px; background: #192232; }
 .performance-bar { display: block; height: 100%; background: #4b699e; }
 .performance-bar-highlight { background: #7fa8ff; }
 .performance-value { color: #e4e9f1; font: 13px "Courier New", monospace; text-align: right; }
-.performance-chart-secondary { padding-top: 22px; border-top: 1px solid #263144; }
+.performance-breakdown { margin-bottom: 20px; padding-top: 17px; border-top: 1px solid #263144; }
+.performance-breakdown summary { color: #a6b8dd; font: 12px "Courier New", monospace; cursor: pointer; }
+.performance-breakdown summary:focus-visible { outline: 2px solid #7fa8ff; outline-offset: 5px; }
+.performance-breakdown[open] summary { margin-bottom: 22px; }
 .performance-detail { margin: 12px 0 0; color: #a6b8dd; font-size: 12px; }
 .performance-method { margin: 0; padding-top: 17px; border-top: 1px solid #263144; color: #8993a5; font-size: 11px; line-height: 1.6; }
+.performance-method p { margin: 0 0 8px; }
+.performance-method p:last-child { margin-bottom: 0; }
 @media (max-width: 590px) { .performance { padding: 20px 16px; } .performance-heading { align-items: start; } .performance h2 { font-size: 21px; } .performance-callout strong { font-size: 24px; } .performance-row { grid-template-columns: 1fr 57px; gap: 5px 8px; } .performance-label { grid-column: 1 / -1; } .performance-chart figcaption { flex-direction: column; gap: 2px; } .performance-chart figcaption span { text-align: left; } }
