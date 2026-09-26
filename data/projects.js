@@ -2,8 +2,8 @@ export const projects = {
   ballform: {
     slug: "ballform",
     title: "ballform",
-    summary: "A computer vision project that looks at shooting form, gives feedback, and rates shots in a real 1-on-1 or 5 on 5 game.",
-    notes: "intended to run on apple silicon with 16gb ram (only tested on 36gb).",
+    summary: "A computer vision project that looks at shooting form, gives feedback, and rates shots in a real 1-on-1 or 5 on 5 game. I optimized the GPU kernel and video pipeline to cut processing time by 88% on a test clip.",
+    notes: "intended to run on apple silicon with 16gb ram (only tested on 36gb). Ball detection uses an optimized MLX + Metal kernel, with fp16 Core ML pose work split between the Neural Engine and GPU.",
     github: "https://github.com/ishaanzee/formball",
     cover: "/projects/ballform/cover.png",
     media: [
@@ -15,12 +15,8 @@ export const projects = {
         caption: "first clip: drag the slider to see what ballform tracks.",
       },
       {
-        src: "/projects/ballform/Screenshot 2026-09-18 at 8.20.05 PM.png",
-        caption: "ballform found one release and marked it as made or likely made."
-      },
-      {
-        src: "/projects/ballform/Screenshot 2026-09-18 at 8.20.15 PM.png",
-        caption: "the shot scored 88/100 for space. below it are the defender spacing and hand clearance measurements."
+        src: "/projects/ballform/metrics1.png",
+        caption: "court calibration estimates this shot at 24.3 ft from the basket, with 10.1 ft of floor separation between the shooter and defender."
       },
       {
         comparison: {
@@ -30,12 +26,8 @@ export const projects = {
         caption: "second clip: drag the slider to compare the original footage with ballform's tracking.",
       },
       {
-        src: "/projects/ballform/simplemetrics.png",
-        caption: "one release found in the second clip, also marked as made or likely made."
-      },
-      {
-        src: "/projects/ballform/advancedmetrics.png",
-        caption: "this shot scored 66.9/100 for space. ballform couldn't measure the change in separation before release."
+        src: "/projects/ballform/metrics2.png",
+        caption: "pose estimation measures the shooter–defender gap in torso lengths: 2.98 at release here, after narrowing by 0.98 before the shot."
       }
 
     ],

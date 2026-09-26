@@ -82,6 +82,12 @@ footer { margin-top: 75px; padding-top: 15px; border-top: 1px solid #282828; col
 .performance-breakdown summary:focus-visible { outline: 2px solid #7fa8ff; outline-offset: 5px; }
 .performance-breakdown[open] summary { margin-bottom: 22px; }
 .performance-detail { margin: 12px 0 0; color: #a6b8dd; font-size: 12px; }
+.performance-intro { margin: -10px 0 24px; }
+.performance-history-intro { margin: 0 0 22px; }
+.performance-groups { display: grid; gap: 22px; }
+.performance-group-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; margin: 0 0 9px; color: #a6b8dd; font: 12px "Courier New", monospace; }
+.performance-group .performance-row { grid-template-columns: 48px minmax(0, 1fr) 62px; }
+.performance-group .performance-label { grid-column: auto; }
 .performance-method { margin: 0; padding-top: 17px; border-top: 1px solid #263144; color: #8993a5; font-size: 11px; line-height: 1.6; }
 .performance-method p { margin: 0 0 8px; }
 .performance-method p:last-child { margin-bottom: 0; }
