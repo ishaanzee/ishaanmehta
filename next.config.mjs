@@ -3,7 +3,12 @@ export default {
     return [
       {
         source: "/projects/basketball/formballcover.png",
-        destination: "/projects/ballform/cover.png",
+        destination: "/projects/ballform/cover.jpg",
+        permanent: true,
+      },
+      {
+        source: "/projects/ballform/cover.png",
+        destination: "/projects/ballform/cover.jpg",
         permanent: true,
       },
       {

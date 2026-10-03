@@ -58,9 +58,9 @@ export default function VideoWipe({ before, after }) {
   return (
     <div className="video-wipe">
       <div className="video-wipe-frame" ref={frame}>
-        <video ref={beforeVideo} src={before} muted loop playsInline />
+        <video ref={beforeVideo} src={before} poster={before.replace(/\.mp4$/, ".jpg")} preload="metadata" muted loop playsInline />
         <div className="video-wipe-after" style={{ width: `${position}%` }}>
-          <video ref={afterVideo} src={after} style={{ width: `${position ? 10000 / position : 100}%` }} muted loop playsInline />
+          <video ref={afterVideo} src={after} poster={after.replace(/\.mp4$/, ".jpg")} preload="metadata" style={{ width: `${position ? 10000 / position : 100}%` }} muted loop playsInline />
         </div>
         <span className="video-wipe-label video-wipe-vision-label">computer vision</span>
         <span className="video-wipe-label video-wipe-original-label">original</span>

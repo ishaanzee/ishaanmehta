@@ -5,7 +5,7 @@ export const projects = {
     summary: "A computer vision project that looks at shooting form, gives feedback, and rates shots in a real 1-on-1 or 5 on 5 game. I optimized the GPU kernel and video pipeline to cut processing time by 88% on a test clip.",
     notes: "intended to run on apple silicon with 16gb ram (only tested on 36gb). Ball detection uses an optimized MLX + Metal kernel, with fp16 Core ML pose work split between the Neural Engine and GPU.",
     github: "https://github.com/ishaanzee/formball",
-    cover: "/projects/ballform/cover.png",
+    cover: "/projects/ballform/cover.jpg",
     media: [
       {
         comparison: {
@@ -38,7 +38,7 @@ export const projects = {
     summary: "A 5-DOF URDF lamp controlled by a person's arm movement. MediaPipe tracks the shoulder, elbow, and wrist, then maps those angles to the lamp's base, shoulder, and middle joint.",
     notes: "rf detr nano x openCV x mediapip x pytorch. as arm moves, lamp follows. open hand turns the light on and closing hand turns it off.",
     github: "https://github.com/ishaanzee/LCRobot",
-    cover: "projects/lamp/coverlcr.png",
+    cover: "/projects/lamp/coverlcr.jpg",
     media: [{
       youtube: "g2LXclfwVDU",
       caption: "Lamp robot demo",
