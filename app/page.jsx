@@ -40,8 +40,11 @@ export default function Home() {
           <div className="project-text"><h3>claude usage widget</h3><p>An iPhone widget that shows my Claude session and weekly usage, so I always know how much I have left. A menu bar plugin on my Mac syncs the numbers through iCloud every 5 minutes.</p><small>javascript / scriptable / swiftbar</small></div>
           <ProjectMedia project="claude-widget" variant="widget" />
         </article></a>
+        <a className="project-link" href="/projects/rdr2-mac"><article className="project">
+          <div className="project-text"><h3>red dead redemption 2 on mac</h3><p>Got RDR2 running on my Apple Silicon Mac, which it has no official support for. I put together a CrossOver Wine and Apple D3DMetal setup, patched Wine to fix crashes in Rockstar&apos;s launcher, and wrote the scripts that start it.</p><small>c / python / wine / metal</small></div>
+          <ProjectMedia project="rdr2-mac" variant="rdr2" />
+        </article></a>
         <a className="project-link" href="https://autofillpdf.com" target="_blank" rel="noreferrer"><article className="text-project"><h3>AutoFillPDF ↗</h3><p>A tool for filling out annoying PDFs. I trained a D-FINE object detection model on CommonForms to find fields in flattened forms and built the rest of the pipeline around it. Typescript / React / Node.js / Python / ML</p></article></a>
-        <a className="project-link" href="https://github.com/ishaanzee/rdr2-mac-engine" target="_blank" rel="noreferrer"><article className="text-project"><h3>Red Dead Redemption 2 on Mac ↗</h3><p>Got RDR2 running on my Apple Silicon Mac, which it has no official support for. I put together a CrossOver Wine and Apple D3DMetal setup, patched Wine to fix crashes in Rockstar's launcher, and wrote the scripts that start it. C / Python / Wine / Metal</p></article></a>
         <article className="text-project"><h3>FRC Team 2404</h3><p>Electrical and programming for our 30+ person robotics team. One project was a targeting algorithm that let the robot line up a shot while it was moving. We won the 2026 CA District Glendale event.</p></article>
         <article className="text-project"><h3>electric bikes</h3><p>Built a few mid-drive and hub-drive e-bike conversions. Made wiring harnesses, integrated the electronics, and spent a lot of time debugging battery problems.</p></article>
       </section>

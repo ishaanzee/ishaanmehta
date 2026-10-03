@@ -59,6 +59,20 @@ export const projects = {
       },
     ],
   },
+  "rdr2-mac": {
+    slug: "rdr2-mac",
+    title: "red dead redemption 2 on mac",
+    summary: "Red Dead Redemption 2 has no Mac version, so I built a setup that runs the Windows game on my Apple Silicon Mac. It launches from Heroic, signs in to Rockstar on its own, and is playable.",
+    notes: "the engine is wine 9.0 built from crossover 24 sources, with apple's d3dmetal 3.0 translating directx 12 to metal. rockstar's launcher is a chromium app that kept crashing under wine, so i patched wine's user32 and d2d1 and wrote a small c wrapper that starts the social club helper with the right chromium flags. you need your own copy of the game from epic. none of the game or apple's files are in the repo, just the patches and scripts.",
+    github: "https://github.com/ishaanzee/rdr2-mac-engine",
+    cover: "/projects/rdr2-mac/cover.jpg",
+    media: [
+      {
+        src: "/projects/rdr2-mac/gameplay.jpg",
+        caption: "red dead redemption 2 running on my M3 Pro MacBook through the custom wine + d3dmetal setup.",
+      },
+    ],
+  },
 };
 
 export function getProject(slug) {
