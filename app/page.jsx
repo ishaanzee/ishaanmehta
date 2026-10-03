@@ -41,6 +41,7 @@ export default function Home() {
           <ProjectMedia project="claude-widget" variant="widget" />
         </article></a>
         <a className="project-link" href="https://autofillpdf.com" target="_blank" rel="noreferrer"><article className="text-project"><h3>AutoFillPDF ↗</h3><p>A tool for filling out annoying PDFs. I trained a D-FINE object detection model on CommonForms to find fields in flattened forms and built the rest of the pipeline around it. Typescript / React / Node.js / Python / ML</p></article></a>
+        <a className="project-link" href="https://github.com/ishaanzee/rdr2-mac-engine" target="_blank" rel="noreferrer"><article className="text-project"><h3>Red Dead Redemption 2 on Mac ↗</h3><p>Got RDR2 running on my Apple Silicon Mac, which it has no official support for. I put together a CrossOver Wine and Apple D3DMetal setup, patched Wine to fix crashes in Rockstar's launcher, and wrote the scripts that start it. C / Python / Wine / Metal</p></article></a>
         <article className="text-project"><h3>FRC Team 2404</h3><p>Electrical and programming for our 30+ person robotics team. One project was a targeting algorithm that let the robot line up a shot while it was moving. We won the 2026 CA District Glendale event.</p></article>
         <article className="text-project"><h3>electric bikes</h3><p>Built a few mid-drive and hub-drive e-bike conversions. Made wiring harnesses, integrated the electronics, and spent a lot of time debugging battery problems.</p></article>
       </section>
