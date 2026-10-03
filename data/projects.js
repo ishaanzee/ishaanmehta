@@ -71,6 +71,10 @@ export const projects = {
         src: "/projects/rdr2-mac/gameplay.jpg",
         caption: "red dead redemption 2 running on my M3 Pro MacBook through the custom wine + d3dmetal setup.",
       },
+      {
+        src: "/projects/rdr2-mac/menu.jpg",
+        caption: "the in-game pause menu.",
+      },
     ],
   },
 };
