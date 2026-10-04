@@ -49,13 +49,13 @@ export const projects = {
     slug: "claude-widget",
     title: "claude usage widget",
     summary: "An iPhone widget that shows how much of my Claude session (5h) and weekly limits I've used, so I can check without opening anything.",
-    notes: "a swiftbar plugin on my mac writes the usage to a json file in icloud drive every 5 minutes, and a scriptable widget on my phone reads it. bars turn amber at 70% and red at 90%, and it warns you if the mac hasn't updated in 30 minutes. comes in small, medium, and lock screen sizes.",
+    notes: "a swiftbar plugin on my mac writes the usage to a json file in icloud drive every 5 minutes, and a scriptable widget on my phone reads it. bars turn amber at 70% and red at 90%, it remembers the last reading if the mac or icloud is offline, shows when it last updated, and warns you if that's over 30 minutes old. comes in small, medium, and lock screen sizes.",
     github: "https://github.com/ishaanzee/claude-usage-widget",
     cover: "/projects/claude-widget/widget.png",
     media: [
       {
         src: "/projects/claude-widget/widget.png",
-        caption: "the medium widget on my home screen: 9% of the 5 hour session and 16% of the weekly limit used, plus the per-model weekly number at the bottom.",
+        caption: "the medium widget on my home screen: the 5 hour session just reset to 0%, 16% of the weekly limit used, plus the per-model weekly number and last updated time at the bottom.",
       },
     ],
   },
