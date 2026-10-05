@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { projects, getProject } from "../../../data/projects";
 import VideoWipe from "../../../components/VideoWipe";
 import PerformanceChart from "../../../components/PerformanceChart";
+import KerneloptChart from "../../../components/KerneloptChart";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -48,7 +49,7 @@ export default async function ProjectPage({ params }) {
               {slug === "ballform" && index === 0 && <PerformanceChart />}
             </Fragment>
           );
-        }) : (
+        }) : slug === "kernelopt" ? <KerneloptChart /> : (
           <div className="empty-gallery">
             <p>photos and videos will go here</p>
             <small>see public/projects/{project.slug}/README.txt</small>

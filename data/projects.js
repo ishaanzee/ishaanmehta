@@ -32,6 +32,14 @@ export const projects = {
 
     ],
   },
+  kernelopt: {
+    slug: "kernelopt",
+    title: "kernelopt",
+    summary: "I rewrote ballform's RF-DETR ball detector in MLX and replaced the slow parts with custom Metal kernels. It's 1.8× faster than ONNX Runtime + Core ML on my M3 Pro (50.9 ms to 28.2 ms per 1080p frame) and still passes every accuracy check.",
+    notes: "i profiled first and only wrote kernels where the profile said to: a fused residual + layernorm, a deformable attention sampler, an fp32 matrix multiply with gelu built in, and one kernel that does all the preprocessing. the backbone's matrix multiplies now run at 4.8–5.5 tflops, close to the most mlx gets out of this gpu in fp32, so the rest of the wins would have to come from fusing more work into them. fp16 would be faster, but the model ranks 1600 proposals and keeps the top 300, and fp16 rounding is enough to reshuffle about a third of them, so it stays opt-in. ballform uses this as its detector.",
+    github: "https://github.com/ishaanzee/kernelopt",
+    media: [],
+  },
   lamp: {
     slug: "lamp",
     title: "lamp robot simulation",

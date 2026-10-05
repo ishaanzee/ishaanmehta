@@ -32,6 +32,10 @@ export default function Home() {
           <div className="project-text"><h3>ballform</h3><p>Looks at your shooting form and gives feedback. It can also rate shots in any game from 1v1 to 5v5 by analyzing separation. I optimized the GPU kernel and video pipeline to cut processing time by 88% on a test clip.</p><small>python / pose estimation / ml</small></div>
           <ProjectMedia project="ballform" variant="ballform" />
         </article></a>
+        <a className="project-link" href="/projects/kernelopt"><article className="project">
+          <div className="project-text"><h3>kernelopt</h3><p>Rewrote ballform&apos;s ball detector in MLX with custom Metal kernels. It&apos;s 1.8× faster than ONNX Runtime + Core ML on an M3 Pro with the same detections, and preprocessing went from 4.7 ms on the CPU to 0.42 ms on the GPU.</p><small>python / metal / mlx / gpu</small></div>
+          <ProjectMedia project="kernelopt" variant="kernelopt" />
+        </article></a>
         <a className="project-link" href="/projects/lamp"><article className="project">
           <div className="project-text"><h3>lamp robot simulation</h3><p>A 5-DOF character lamp that uses a person&apos;s arm movement to control the simulated joints.</p><small>python / computer vision / simulation</small></div>
           <ProjectMedia project="lamp" variant="lamp" />

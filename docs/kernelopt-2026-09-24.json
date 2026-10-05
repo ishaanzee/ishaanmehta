@@ -1,0 +1,51 @@
+{
+  "measured_on": "2026-09-24",
+  "hardware": "M3 Pro (18-core GPU, 36 GB)",
+  "source": "https://github.com/ishaanzee/kernelopt/blob/main/README.md (bench.py --baseline)",
+  "headline": {
+    "speedup": 1.8,
+    "accuracy_checks_passed": 147,
+    "accuracy_checks_total": 147,
+    "accuracy_images": 11,
+    "threaded_calls_per_s_before": 22.8,
+    "threaded_calls_per_s_after": 40.0
+  },
+  "charts": [
+    {
+      "id": "end_to_end_frame",
+      "title": "One 1920×1080 frame, end to end",
+      "unit": "milliseconds",
+      "note": "median of 60 warm calls, preprocessing included",
+      "points": [
+        { "run": "ort_coreml", "label": "ONNX Runtime + Core ML", "value": 50.9 },
+        { "run": "mlx_fp32", "label": "MLX + Metal, fp32", "value": 28.2 },
+        { "run": "mlx_fp16", "label": "MLX + Metal, fp16 (fails accuracy)", "value": 24.9 }
+      ]
+    },
+    {
+      "id": "model_steps",
+      "title": "Model only, step by step",
+      "unit": "milliseconds",
+      "note": "one 640×640 input, batch 1, fp32",
+      "points": [
+        { "run": "baseline", "label": "ONNX Runtime + Core ML", "value": 42.6 },
+        { "run": "port", "label": "MLX port", "value": 42.5 },
+        { "run": "compile", "label": "+ mx.compile", "value": 32.8 },
+        { "run": "layernorm", "label": "+ fused residual + LayerNorm", "value": 30.9 },
+        { "run": "deform", "label": "+ deformable attention kernel", "value": 30.0 },
+        { "run": "qkv", "label": "+ head-major QKV", "value": 29.1 },
+        { "run": "gemm", "label": "+ GEMM with fused GELU", "value": 28.1 }
+      ]
+    },
+    {
+      "id": "preprocess",
+      "title": "Preprocessing (resize + normalize)",
+      "unit": "milliseconds",
+      "note": "bit-identical output",
+      "points": [
+        { "run": "cpu", "label": "OpenCV on the CPU", "value": 4.7 },
+        { "run": "gpu", "label": "one Metal kernel", "value": 0.42 }
+      ]
+    }
+  ]
+}

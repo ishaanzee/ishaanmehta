@@ -1,7 +1,7 @@
 import performance from "../docs/portfolio-performance.json";
 import latest from "../docs/performance-2026-09-25.json";
 
-function Bars({ chart, unit, decimals = 2, highlight, scaleMax }) {
+export function Bars({ chart, unit, decimals = 2, highlight, scaleMax }) {
   const max = scaleMax ?? Math.max(...chart.points.map((point) => point.value));
 
   return (
