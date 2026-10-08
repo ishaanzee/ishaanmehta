@@ -54,8 +54,32 @@ export default function Home() {
       </section>
 
       <section>
+        <h2>open source</h2>
+        <article className="text-project">
+          <h3><a href="https://github.com/Blaizzy/mlx-vlm/pulls?q=author:ishaanzee" target="_blank" rel="noreferrer">MLX-VLM ↗</a></h3>
+          <p>Vision and language models on Apple Silicon (5.5K+ GitHub stars). I sped up and fixed its RF-DETR object detector, checking every change against the original PyTorch model.</p>
+          <ul className="pr-list">
+            <li><a href="https://github.com/Blaizzy/mlx-vlm/pull/2443" target="_blank" rel="noreferrer">#2443</a>Switched the backbone to MLX&apos;s fused attention, making detection 21% faster.<span className="pr-status pr-merged">merged</span></li>
+            <li><a href="https://github.com/Blaizzy/mlx-vlm/pull/2450" target="_blank" rel="noreferrer">#2450</a>Fixed an off-by-one in the backbone layers it read, which shifted boxes by up to 11.7&nbsp;px.<span className="pr-status pr-merged">merged</span></li>
+            <li><a href="https://github.com/Blaizzy/mlx-vlm/pull/2452" target="_blank" rel="noreferrer">#2452</a>Made weight conversion idempotent, so converted and quantized checkpoints load instead of crashing.<span className="pr-status pr-merged">merged</span></li>
+            <li><a href="https://github.com/Blaizzy/mlx-vlm/pull/2453" target="_blank" rel="noreferrer">#2453</a>Fixed the small model&apos;s config so it loads and matches the PyTorch reference.<span className="pr-status pr-merged">merged</span></li>
+            <li><a href="https://github.com/Blaizzy/mlx-vlm/pull/2454" target="_blank" rel="noreferrer">#2454</a>Fixed a Metal sampling kernel that didn&apos;t compile in bf16 and lost precision in fp16.<span className="pr-status pr-merged">merged</span></li>
+            <li><a href="https://github.com/Blaizzy/mlx-vlm/pull/2468" target="_blank" rel="noreferrer">#2468</a>Moved the segmentation upsample to an existing GPU kernel, making segmentation 7–9% faster.<span className="pr-status">in review</span></li>
+            <li><a href="https://github.com/Blaizzy/mlx-vlm/pull/2469" target="_blank" rel="noreferrer">#2469</a>Got the large model loading by adding its multi-scale projector and multi-level deformable attention.<span className="pr-status">in review</span></li>
+          </ul>
+        </article>
+        <article className="text-project">
+          <h3><a href="https://github.com/ml-explore/mlx/pulls?q=author:ishaanzee" target="_blank" rel="noreferrer">MLX ↗</a></h3>
+          <p>Apple&apos;s array framework for machine learning (28K+ GitHub stars). I found that conv2d gave different results for the same image depending on batch size, because a faster but less precise algorithm kicks in from a batch of 3.</p>
+          <ul className="pr-list">
+            <li><a href="https://github.com/ml-explore/mlx/pull/4639" target="_blank" rel="noreferrer">#4639</a>Added a documented switch to turn that algorithm off, so results stay the same at any batch size.<span className="pr-status">in review</span></li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
         <h2>work</h2>
-        <div className="job"><p><strong>SoCal Rehab</strong> — ML Engineer</p><p>Automated clinical paperwork with Vertex AI and Apps Script. Cut a roughly 5 hour process down to about 15 minutes per patient.</p></div>
+        <div className="job"><p><strong>SoCal Rehab</strong> — ML Engineer</p><p>Automated clinical paperwork with Vertex AI and Apps Script. Cut processing for a 100+ patient batch from about 5 hours to 15 minutes.</p></div>
         <div className="job"><p><strong>AutoFillPDF</strong> — Founder / Engineer</p><p>Built the product, ML pipeline, and everything else.</p></div>
       </section>
 

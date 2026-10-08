@@ -4,7 +4,7 @@ export const projects = {
     title: "ballform",
     summary: "A computer vision project that looks at shooting form, gives feedback, and rates shots in a real 1-on-1 or 5 on 5 game. I optimized the GPU kernel and video pipeline to cut processing time by 88% on a test clip.",
     notes: "intended to run on apple silicon with 16gb ram (only tested on 36gb). Ball detection uses an optimized MLX + Metal kernel, with fp16 Core ML pose work split between the Neural Engine and GPU.",
-    github: "https://github.com/ishaanzee/formball",
+    github: "https://github.com/ishaanzee/ballform",
     cover: "/projects/ballform/cover.jpg",
     media: [
       {
