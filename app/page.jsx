@@ -63,7 +63,7 @@ export default function Home() {
           <h3><a href="https://github.com/ml-explore/mlx/pulls?q=author:ishaanzee" target="_blank" rel="noreferrer">MLX ↗</a></h3>
           <p>Apple&apos;s array framework for machine learning (28K+ GitHub stars). I found that conv2d gave different results for the same image depending on batch size, because a faster but less precise algorithm kicks in from a batch of 3.</p>
           <ul className="pr-list">
-            <li><a href="https://github.com/ml-explore/mlx/pull/4639" target="_blank" rel="noreferrer">#4639</a>Added a documented switch to turn that algorithm off, so results stay the same at any batch size.<span className="pr-status">in review</span></li>
+            <li><a href="https://github.com/ml-explore/mlx/pull/4639" target="_blank" rel="noreferrer">#4639</a>Added a documented switch to turn that algorithm off, so results stay the same at any batch size.<span className="pr-status pr-merged">merged</span></li>
           </ul>
         </article>
       </section>
