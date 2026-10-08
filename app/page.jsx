@@ -5,7 +5,7 @@ export default function Home() {
     <main className="page">
       <header>
         <h1>Ishaan Mehta</h1>
-        <p>computer engineering student at uwaterloo</p>
+        <p>computer engineering student at uwaterloo · first year, graduating may 2031</p>
         <nav>
           <a href="mailto:i4mehta@uwaterloo.ca">waterloo email</a>
           <a href="mailto:ishaanmehta2000@gmail.com">personal email</a>
@@ -16,15 +16,6 @@ export default function Home() {
       </header>
 
       <section><p>Hi, I&apos;m Ishaan. I like building and software that is actually useful, robots, and computer vision stuff. Anything that makes the world more efficient or safer. Right now I&apos;m studying Computer Engineering at Waterloo.</p></section>
-
-      <section>
-        <h2>education</h2>
-        <div className="education">
-          <p><strong>University of Waterloo</strong></p>
-          <p>BASc in Computer Engineering, Co-op</p>
-          <p>First year · September 2026 – May 2031 (expected)</p>
-        </div>
-      </section>
 
       <section>
         <h2>things i&apos;ve made</h2>
@@ -48,7 +39,7 @@ export default function Home() {
           <div className="project-text"><h3>red dead redemption 2 on mac</h3><p>Got RDR2 running on my Apple Silicon Mac, which it has no official support for. I put together a CrossOver Wine and Apple D3DMetal setup, patched Wine to fix crashes in Rockstar&apos;s launcher, and wrote the scripts that start it.</p><small>c / python / wine / metal</small></div>
           <ProjectMedia project="rdr2-mac" variant="rdr2" />
         </article></a>
-        <a className="project-link" href="https://autofillpdf.com" target="_blank" rel="noreferrer"><article className="text-project"><h3>AutoFillPDF ↗</h3><p>A tool for filling out annoying PDFs. I trained a D-FINE object detection model on CommonForms to find fields in flattened forms and built the rest of the pipeline around it. Typescript / React / Node.js / Python / ML</p></article></a>
+        <a className="project-link" href="https://autofillpdf.com" target="_blank" rel="noreferrer"><article className="text-project"><h3>AutoFillPDF ↗</h3><p>A tool for filling out annoying PDFs, now at $1,000+ MRR with 70+ monthly users. I trained a D&#8209;FINE object detector on 13K+ annotated forms to find fields in flattened PDFs, then built the pipeline that pairs it with language models to fill them in.</p><small>typescript / react / python / pytorch / postgresql</small></article></a>
         <article className="text-project"><h3>FRC Team 2404</h3><p>Electrical and programming for our 30+ person robotics team. One project was a targeting algorithm that let the robot line up a shot while it was moving. We won the 2026 CA District Glendale event.</p></article>
         <article className="text-project"><h3>electric bikes</h3><p>Built a few mid-drive and hub-drive e-bike conversions. Made wiring harnesses, integrated the electronics, and spent a lot of time debugging battery problems.</p></article>
       </section>
@@ -80,10 +71,10 @@ export default function Home() {
       <section>
         <h2>work</h2>
         <div className="job"><p><strong>SoCal Rehab</strong> — ML Engineer</p><p>Automated clinical paperwork with Vertex AI and Apps Script. Cut processing for a 100+ patient batch from about 5 hours to 15 minutes.</p></div>
-        <div className="job"><p><strong>AutoFillPDF</strong> — Founder / Engineer</p><p>Built the product, ML pipeline, and everything else.</p></div>
+        <div className="job"><p><strong>AutoFillPDF</strong> — Founder / Engineer</p><p>Built and launched a document automation platform with $1,000+ MRR and 70+ monthly users. Did the product, the ML pipeline, and everything else.</p></div>
       </section>
 
-      <section><h2>some tools i use</h2><p>Python, TypeScript, Java, PyTorch, Arduino, Raspberry Pi, Linux, PostgreSQL, GCP</p></section>
+      <section><h2>some tools i use</h2><p>Python, TypeScript, C++, Java, SQL · PyTorch, MLX, Core ML, ONNX Runtime, OpenCV, MediaPipe · Metal, FastAPI, Next.js, PostgreSQL, Vertex AI, Linux, Arduino, Raspberry Pi</p></section>
       <footer><p>ishaan mehta · 2026 · <a href="mailto:i4mehta@uwaterloo.ca">waterloo</a> / <a href="mailto:ishaanmehta2000@gmail.com">personal</a></p></footer>
     </main>
   );
