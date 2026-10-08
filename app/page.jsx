@@ -15,7 +15,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <section><p>I like making things run on hardware they weren't built for, or faster than designed. Specifically, I've written Metal kernels that sped up a detector 1.8x and got RDR2 running on macOS. Looking for a winter 2027 co-op (jan-apr).</p></section>
+      <section><p>I like making things run on hardware they weren't built for, or faster than designed. Specifically, I wrote Metal kernels that sped up a detector 1.8x and got RDR2 running on macOS. Looking for a winter 2027 co-op (jan-apr).</p></section>
 
       <section>
         <h2>things i&apos;ve made</h2>
