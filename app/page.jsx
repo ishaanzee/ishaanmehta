@@ -5,7 +5,7 @@ export default function Home() {
     <main className="page">
       <header>
         <h1>Ishaan Mehta</h1>
-        <p>computer engineering student at uwaterloo · first year, graduating may 2031</p>
+        <p>comp eng @ waterloo · first year</p>
         <nav>
           <a href="mailto:i4mehta@uwaterloo.ca">waterloo email</a>
           <a href="mailto:ishaanmehta2000@gmail.com">personal email</a>
@@ -15,7 +15,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <section><p>Hi, I&apos;m Ishaan. I like building and software that is actually useful, robots, and computer vision stuff. Anything that makes the world more efficient or safer. Right now I&apos;m studying Computer Engineering at Waterloo.</p></section>
+      <section><p>I like making things run on hardware they weren't built for, or faster than designed. Specifically, I've written Metal kernels that sped up a detector 1.8x and got RDR2 running on macOS. Looking for a winter 2027 co-op (jan-apr).</p></section>
 
       <section>
         <h2>things i&apos;ve made</h2>
